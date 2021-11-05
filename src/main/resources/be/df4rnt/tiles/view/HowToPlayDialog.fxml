@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.df4rnt.tiles.view.HowToPlayDialogController">
+   <children>
+      <VBox layoutX="149.0" layoutY="66.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label text="HOW TO PLAY?" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="170.0" top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label text="Spot The Tile With A Different Color" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="150.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label text="Mouse Click On the Tile That Is Different" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="130.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Complete As Fast As You Can" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="170.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Different Color" textAlignment="CENTER" textFill="#2200ff">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="235.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Rectangle fx:id="stdRecTile1" arcHeight="5.0" arcWidth="5.0" fill="#a8e10c" height="100.0" stroke="#a8e10c" strokeType="INSIDE" width="100.0" />
+                  <Rectangle fx:id="scoreRecTile1" arcHeight="5.0" arcWidth="5.0" fill="#cbee6b" height="100.0" stroke="#a8e10c" strokeType="INSIDE" width="100.0" />
+                  <Rectangle fx:id="stdRecTile2" arcHeight="5.0" arcWidth="5.0" fill="#a8e10c" height="100.0" stroke="#a8e10c" strokeType="INSIDE" width="100.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="130.0" right="100.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="tileStatusLabel" textAlignment="CENTER" textFill="#05c367">
+               <VBox.margin>
+                  <Insets left="265.0" right="150.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
